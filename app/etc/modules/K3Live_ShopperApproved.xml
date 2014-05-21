@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <K3Live_ShopperApproved>
+            <active>true</active>
+            <codePool>community</codePool>
+        </K3Live_ShopperApproved>
+    </modules>
+</config>

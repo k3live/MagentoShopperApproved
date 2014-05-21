@@ -1,0 +1,16 @@
+<?php
+/**
+ * ShopperApproved Module for Magento 
+ *
+ * @category    design_default
+ * @package     K3Live_ShopperApproved
+ * @author      K3Live (http://www.k3live.com/)
+ * @copyright   Copyright (c) 2013 K3Live (http://www.k3live.com/)
+ * @license     Open Software License
+ */
+?>
+
+<?php if($this->getSetting('enabled')) { ?>
+<script type="text/javascript" src="https://www.shopperapproved.com/thankyou/sv-draw_js.php?site=<?php echo $this->getSetting('account'); ?>"></script>
+<script src="https://www.shopperapproved.com/thankyou/opt-in.js" type="text/javascript"></script>
+<?php } ?>

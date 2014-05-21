@@ -1,0 +1,52 @@
+<config>
+    <modules>
+        <K3Live_ShopperApproved>
+            <version>1.0</version>
+        </K3Live_ShopperApproved>
+    </modules>
+    <global>
+        <blocks>
+            <shopperapproved>
+                <class>K3Live_ShopperApproved_Block</class>
+            </shopperapproved>
+        </blocks>
+        <helpers>
+            <shopperapproved>
+                <class>K3Live_ShopperApproved_Helper</class>
+            </shopperapproved>
+        </helpers>
+     </global>
+     <frontend>
+        <layout>
+            <updates>
+                <shopperapproved>
+                    <file>shopperapproved.xml</file>
+                </shopperapproved>
+            </updates>
+        </layout>
+    </frontend>
+     <adminhtml>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <k3live>
+                                        <title>K3Live - All</title>
+                                    </k3live>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</adminhtml>
+</config>

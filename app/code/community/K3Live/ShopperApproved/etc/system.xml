@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <k3live translate="label" module="shopperapproved">
+            <label>K3Live Extensions</label>
+            <sort_order>100</sort_order>
+        </k3live>
+    </tabs>
+    <sections>
+        <k3live translate="label" module="shopperapproved">
+            <label>ShopperApproved</label>
+            <tab>k3live</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+            	<getting_started_1 translate="label" module="shopperapproved">
+                    <label>Getting Started</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <comment><![CDATA[Welcome to the ShopperApproved setup. If you have not already setup an account then click below on<a onclick="Fieldset.toggleCollapse('k3live_getting_started_2', ''); return false;" href="#" id="k3live_getting_started_2-head" class="open">"No Previous Account"</a>.<br /><br />If you already have an account then<a href="https://www.shopperapproved.com/contact-us.php" target="_blank">click here to open a ticket</a>.<br />Send To: General Department<br />Title: Affiliate Credit for 18393<br />Message: We have setup the Magento ShopperApproved module and are requesting you credit affiliate 18393.<br /><br />Once complete with requesting the affiliate credit, click on<a onclick="Fieldset.toggleCollapse('k3live_shopperapproved_setup', ''); return false;" href="#" id="k3live_shopperapproved_setup-head" class="open">"ShopperApproved Setup"</a> below.]]></comment>
+                </getting_started_1>
+                <getting_started_2 translate="label" module="shopperapproved">
+                    <label>No Previous Account</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>0</expanded>
+                    <comment><![CDATA[<a href="http://www.shopperapproved.com/18393" target="_blank">Follow this link</a> and click on "Get Started".<br />Once you have completed the basic setup and verification you will be given a block of code like below:<br />script type="text/javascript" src="https://www.shopperapproved.com/thankyou/sv-draw_js.php?site=XXXX"<br />Copy the digits after "site=" and continue to <a onclick="Fieldset.toggleCollapse('k3live_shopperapproved_setup', ''); return false;" href="#" id="k3live_shopperapproved_setup-head" class="open">"ShopperApproved Setup"</a> below.]]></comment>
+                </getting_started_2>
+                <shopperapproved translate="label" module="shopperapproved">
+                    <label>ShopperApproved Setup</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>0</expanded>
+                    <fields>
+                    	<enabled translate="label">
+                            <label>Enable Module:</label>
+                            <comment>Enable or disable the ShopperApproved module.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <account_id translate="label">
+                            <label>ShopperApproved ID: </label>
+                            <comment><![CDATA[You can find your Shopper Approved ID by going to <a href="https://www.shopperapproved.com/members/code.php?page=thankyou" target="_blank">this link</a> and looking at the "Link to Full Survey". At the end of the link you should see ?id=XXXX, enter the ID above.]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </account_id>
+                    </fields>
+                </shopperapproved>
+            </groups>
+        </k3live>
+    </sections>
+</config>

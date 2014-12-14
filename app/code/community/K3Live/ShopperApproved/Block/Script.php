@@ -7,7 +7,7 @@
  * @license     Open Software License
  */
  
-class ShopperApproved_RatingsReviews_Block_Script extends Mage_Core_Block_Template
+class K3Live_ShopperApproved_Block_Script extends Mage_Core_Block_Template
 {
     /*
      * Constructor method

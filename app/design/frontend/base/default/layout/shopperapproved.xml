@@ -2,11 +2,9 @@
 <!--
 /**
  * ShopperApproved Module for Magento 
- *
- * @category    design_default
  * @package     K3Live_ShopperApproved
  * @author      K3Live (http://www.k3live.com/)
- * @copyright   Copyright (c) 2013 K3Live (http://www.k3live.com/)
+ * @copyright   Copyright (c) 2014 K3Live (http://www.k3live.com/)
  * @license     Open Software License
  */
 -->
@@ -18,7 +16,7 @@
     </default>
 </layout>-->
 <layout>
-	<checkout_multishipping_success>
+    <checkout_multishipping_success>
         <reference name="before_body_end">
             <block type="shopperapproved/script" name="shopperapproved" as="shopperapproved" template="shopperapproved/script.phtml"/>
         </reference>

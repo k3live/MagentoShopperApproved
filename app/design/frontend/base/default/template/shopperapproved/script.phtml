@@ -1,16 +1,15 @@
 <?php
 /**
  * ShopperApproved Module for Magento 
- *
- * @category    design_default
  * @package     K3Live_ShopperApproved
  * @author      K3Live (http://www.k3live.com/)
- * @copyright   Copyright (c) 2013 K3Live (http://www.k3live.com/)
+ * @copyright   Copyright (c) 2014 K3Live (http://www.k3live.com/)
  * @license     Open Software License
  */
 ?>
 
 <?php if($this->getSetting('enabled')) { ?>
-<script type="text/javascript" src="https://www.shopperapproved.com/thankyou/sv-draw_js.php?site=<?php echo $this->getSetting('account'); ?>"></script>
-<script src="https://www.shopperapproved.com/thankyou/opt-in.js" type="text/javascript"></script>
+<script type="text/javascript"> var sa_values = { 'site':<?php echo $this->getSetting('account'); ?>, 'orderid':'<?php echo $this->getSetting('orderid'); ?>', 'name':'<?php echo $this->getSetting('name'); ?>', 'email':'<?php echo $this->getSetting('email'); ?>', 'country':'<?php echo $this->getSetting('country'); ?>', 'state':'<?php echo $this->getSetting('state'); ?>' }; function saLoadScript(src) { var js = window.document.createElement("script"); js.src = src; js.type = "text/javascript"; document.getElementsByTagName("head")[0].appendChild(js); } var d = new Date(); if (d.getTime() - 172800000 > 1417579658000) saLoadScript("//www.shopperapproved.com/thankyou/rate/<?php echo $this->getSetting('account'); ?>.js"); else saLoadScript("//direct.shopperapproved.com/thankyou/rate/<?php echo $this->getSetting('account'); ?>.js?d=" + d.getTime()); </script>
+<!--<script type="text/javascript" src="https://www.shopperapproved.com/thankyou/sv-draw_js.php?site=<?php echo $this->getSetting('account'); ?>"></script>
+<script src="https://www.shopperapproved.com/thankyou/opt-in.js" type="text/javascript"></script>-->
 <?php } ?>

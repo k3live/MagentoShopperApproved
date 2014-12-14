@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * ShopperApproved Module for Magento 
+ * @package     K3Live_ShopperApproved
+ * @author      K3Live (http://www.k3live.com/)
+ * @copyright   Copyright (c) 2014 K3Live (http://www.k3live.com/)
+ * @license     Open Software License
+ */
+-->
 <config>
     <tabs>
         <k3live translate="label" module="shopperapproved">

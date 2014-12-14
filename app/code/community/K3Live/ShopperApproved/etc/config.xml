@@ -1,7 +1,16 @@
+<!--
+/**
+ * ShopperApproved Module for Magento 
+ * @package     K3Live_ShopperApproved
+ * @author      K3Live (http://www.k3live.com/)
+ * @copyright   Copyright (c) 2014 K3Live (http://www.k3live.com/)
+ * @license     Open Software License
+ */
+-->
 <config>
     <modules>
         <K3Live_ShopperApproved>
-            <version>1.0</version>
+            <version>1.1</version>
         </K3Live_ShopperApproved>
     </modules>
     <global>
@@ -28,9 +37,6 @@
      <adminhtml>
     <acl>
         <resources>
-            <all>
-                <title>Allow Everything</title>
-            </all>
             <admin>
                 <children>
                     <system>
